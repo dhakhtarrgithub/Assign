@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Shopping cart</title>
+  </head>
+  <script src="app.js" defer>
+     
+  </script>
+
+
+  <body class="bg-blue-400 flex justify-center items-center min-h-screen">
+    <!-- wrapper -->
+
+    <div class="wrappe bg-white">
+      <div class="header text-center p-10">
+        <h1 class="text-3xl font-bold p-4">Simple JavaScript Shopping Cart</h1>
+        <p>
+          Simplified 'add to cart' functionality. Uses Javascript and WebStorage
+          API/Cookies <br />to remember cart data converted to JSON format.
+        </p>
+        <p class="pb-4">
+          Click 'Empty Cart' button to remove session cookies from browser.
+        </p>
+        <hr />
+        <p class="text-xl text-gray-500 ">Product 3 was added to the cart</p>
+        <hr />
+      </div>
+
+      <div class="menu w-[80%] mx-auto">
+        <div class="grid grid-cols-3 gap-3 text-center pb-4">
+          <div class="item1 border py-4">
+            <h1 class="font-bold text-xl">Product 1</h1>
+            <p>Product description</p>
+            <p>excerpt...</p>
+            <p>$5.05</p>
+            <button
+              class="bg-orange-500 text-white px-3 py-2 rounded-full text-1xl font-sans mt-3 hover:bg-slate-500"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="item2 border py-4">
+            <h1 class="font-bold text-xl">Product 1</h1>
+            <p>Product description</p>
+            <p>excerpt...</p>
+            <p>$8.05</p>
+            <button
+              class="bg-orange-500 text-white px-3 py-2 rounded-full text-1xl font-sans mt-3 hover:bg-slate-500"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="item3 border py-4">
+            <h1 class="font-bold text-xl">Product 1</h1>
+            <p>Product description</p>
+            <p>excerpt...</p>
+            <p>$10.50</p>
+            <button
+              class="bg-orange-500 text-white px-3 py-2 rounded-full text-1xl font-sans mt-3 hover:bg-slate-500"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart -->
+      <div class="cart border mx-auto w-[90%] rounded mb-3">
+        <h1 class="text-2xl font-bold text-center">Cart</h1>
+
+        <h1 class="px-3 font-bold">
+          Product <span class="font-bold pl-4"> Price</span>
+        </h1>
+        <hr class="w-[110px] ml-3 pb-3" />
+        <hr />
+        <h1 class="pr-6 font-bold text-right">
+          item <span class="font-bold pl-4"> Total </span>
+        </h1>
+        <hr class="w-[110px] ml-[80%] pb-3" />
+        <h1 class="pr-6 text-xl text-right">
+          x 0<span class="pl-4">$0.00</span>
+        </h1>
+        <hr class="w-[110px] ml-[80%] pb-3" />
+        <div class="bt text-right pb-5 px-3">
+          <button
+            class="bg-orange-500 text-white px-3 py-2 rounded-full text-1xl font-sans mt-3 hover:bg-slate-500"
+          >
+            Empty Cart
+          </button>
+          <button
+            class="bg-orange-500 text-white px-3 py-2 rounded-full text-1xl font-sans mt-3 hover:bg-slate-500"
+          >
+            Check Out
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
